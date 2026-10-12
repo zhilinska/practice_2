@@ -1,4 +1,10 @@
-sek = int(input("введите кол-во секунд: "))
+x = 0
+while x ==0:
+    try:
+        sek = int(input("введите кол-во секунд: "))
+        x = x + 1
+    except:
+        print('что-то не то')
 while sek > 86399: #если введено больше суток
     sek = sek - 86400
 h = sek // 3600
